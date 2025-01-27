@@ -1,279 +1,277 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="icon" href="logo/neon logo.png" type="image/icon" />
+    <title>Neon Cinema</title>
+    <!--link to stylesheet-->
+    <link rel="stylesheet" href="stylesheetneon.css" />
+    <!--link to boxicons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Neon Cinema</title>
+  </head>
 
-    <head>
-        <link rel="icon" href="logo/neon logo.png"type="image/icon">
-        <title>Neon Cinema</title>
-        <!--link to stylesheet-->
-        <link rel="stylesheet" href="stylesheetneon.css">
-        <!--link to boxicons-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-        <!-- Link Swiper's CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <title>Neon Cinema</title>
-    </head>
+  <body>
+    <!--navigation bar-->
+    <header>
+      <!--logo-->
 
-    <body>
+      <a href="#" class="logo">
+        <img src="logo/neon cinema.png" width="200px" />
+      </a>
 
-        <!--navigation bar-->
-        <header>
-            <!--logo-->
-            
-            <a href="#" class="logo">
-            <img src="logo/neon cinema.png" width="200px">
-            </a>
+      <!--more botton-->
+      <div class="bx bx-menu" id="menu-icon"></div>
 
-            <!--more botton-->
-            <div class="bx bx-menu" id="menu-icon"></div>
-        
+      <!--menu-->
+      <ul class="navbar">
+        <li><a href="#home" class="actvt-home">Home</a></li>
+        <li><a href="#movies">What's On</a></li>
+        <li><a href="#coming">Coming soon</a></li>
+        <li><a href="#Newsletter">Newsletter</a></li>
+      </ul>
+      <a href="#" class="btn">Sign in</a>
+    </header>
 
-        <!--menu-->
-        <ul class="navbar">
-            <li><a href="#home" class="actvt-home">Home</a></li>
-            <li><a href="#movies">What's On</a></li>
-            <li><a href="#coming">Coming soon</a></li>
-            <li><a href="#Newsletter">Newsletter</a></li>
-        </ul>
-        <a href="#" class="btn">Sign in</a>
-        </header>
-      
-       <!--I use <section> when:
+    <!--I use <section> when:
        You want to break your page into sections with distinct themes or content.
        The content in the section is related and can be described as a standalone part of the page.
        You want to improve the accessibility and semantic structure of your page.-->
-       
-       
-        <!--Swiper-->
-        <section class="home swiper" id="home">
-            <!--<section class="home swiper" id="home">:
+
+    <!--Swiper-->
+    <section class="home swiper" id="home">
+      <!--<section class="home swiper" id="home">:
             This defines a section of your page, with the class home and swiper.
             The swiper class is applied for styling purposes (presumably for a swiper carousel),
             and home is another class, possibly indicating the "home" page section.-->
-            <div class="swiper-wrapper">
-                <!--box1-->
-                <div class="swiper-slide">
-                    <img src="movie posters/swipers/swipe 1.jpg">
-                    <div class="movie-title">
-                        <span>Welcome The Future</span>
-                        <h1>BLADE RUNNER<br>2049</h1>
-                        <a href="#" class="btn">Book Now</a>
-                    </div>
-                </div>
-                <!--box2-->
-                <div class="swiper-slide">
-                    <img src="movie posters/swipers/swipe 2.jpg">
-                    <div class="movie-title">
-                        <span >Top Hits</span>
-                        <h1 >YOUR NAME</h1>
-                        <a href="#" class="btn">Book Now</a>
-                    </div>
-                </div>
-                <!--box3-->
-                <div class="swiper-slide">
-                    <img src="movie posters/swipers/swipe 3.jpg">
-                    <div class="movie-title">
-                        <span>Check Anya Taylor Latest Works</span>
-                        <h1>LAST NIGHT<BR>IN SOHO</h1>
-                        <a href="#" class="btn">Book Now</a>
-                    </div>
-                </div>
-                <!--box4-->
-                <div class="swiper-slide">
-                    <img src="movie posters/swipers/swipe 4.jpg">
-                    <div class="movie-title">
-                        <span>Tarantino's Best Works</span>
-                        <h1>PULP FICTION</h1>
-                        <a href="#" class="btn">Book Now</a>
-                    </div>
-                </div>
-            </div>
+      <div class="swiper-wrapper">
+        <!--box1-->
+        <div class="swiper-slide">
+          <img src="movie posters/swipers/swipe 1.jpg" />
+          <div class="movie-title">
+            <span>Welcome The Future</span>
+            <h1>BLADE RUNNER<br />2049</h1>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+        </div>
+        <!--box2-->
+        <div class="swiper-slide">
+          <img src="movie posters/swipers/swipe 2.jpg" />
+          <div class="movie-title">
+            <span>Top Hits</span>
+            <h1>YOUR NAME</h1>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+        </div>
+        <!--box3-->
+        <div class="swiper-slide">
+          <img src="movie posters/swipers/swipe 3.jpg" />
+          <div class="movie-title">
+            <span>Check Anya Taylor Latest Works</span>
+            <h1>LAST NIGHT<br />IN SOHO</h1>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+        </div>
+        <!--box4-->
+        <div class="swiper-slide">
+          <img src="movie posters/swipers/swipe 4.jpg" />
+          <div class="movie-title">
+            <span>Tarantino's Best Works</span>
+            <h1>PULP FICTION</h1>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </section>
 
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
+    <!--Movies section-->
+    <section class="movies" id="movies">
+      <h2 class="heading">Showing This Week</h2>
 
-        </section>
-
-        <!--Movies section-->
-        <section class="movies" id="movies">
-        <h2 class="heading">Showing This Week </h2>
-
-        <!--Movie container-->
-        <div class="movies-container">
+      <!--Movie container-->
+      <div class="movies-container">
         <!--box 1-->
         <div class="box">
-            <!--displaying the photo-->
-            <div class="box-image">
-            <img src="movie posters/posters/movie 1.jpg">  
-            </div>
-            <!--movie title -->
-            <h3>Interstellar</h3>
-            <!--duration and genre-->
-            <span>169 min | Drama</span>
+          <!--displaying the photo-->
+          <div class="box-image">
+            <img src="movie posters/posters/movie 1.jpg" />
+          </div>
+          <!--movie title -->
+          <h3>Interstellar</h3>
+          <!--duration and genre-->
+          <span>169 min | Drama</span>
         </div>
-         <!--box 2-->
-         <div class="box">
-            <!--displaying the photo-->
-            <div class="box-image">
-            <img src="movie posters/posters/movie 2.jpg">
-            </div>
-            <!--movie title -->
-            <h3>Se7en</h3>
-            <!--duration-->
-            <span>127 min | Crime</span>
+        <!--box 2-->
+        <div class="box">
+          <!--displaying the photo-->
+          <div class="box-image">
+            <img src="movie posters/posters/movie 2.jpg" />
+          </div>
+          <!--movie title -->
+          <h3>Se7en</h3>
+          <!--duration-->
+          <span>127 min | Crime</span>
         </div>
-         <!--box 3-->
-         <div class="box">
-            <!--displaying the photo-->
-            <div class="box-image">
-            <img src="movie posters/posters/movie 3.jpg">
-            </div>
-            <!--movie title -->
-            <h3>Shawshank Redemption</h3>
-            <!--duration-->
-            <span>142min | Drama</span>
+        <!--box 3-->
+        <div class="box">
+          <!--displaying the photo-->
+          <div class="box-image">
+            <img src="movie posters/posters/movie 3.jpg" />
+          </div>
+          <!--movie title -->
+          <h3>Shawshank Redemption</h3>
+          <!--duration-->
+          <span>142min | Drama</span>
         </div>
-         <!--box 4-->
-         <div class="box">
-            <!--displaying the photo-->
-            <div class="box-image">
-            <img src="movie posters/posters/movie 4.jpg">
-            </div>
-            <!--movie title -->
-            <h3>Black Swan</h3>
-            <!--duration-->
-            <span>108 min | Psychological</span>
+        <!--box 4-->
+        <div class="box">
+          <!--displaying the photo-->
+          <div class="box-image">
+            <img src="movie posters/posters/movie 4.jpg" />
+          </div>
+          <!--movie title -->
+          <h3>Black Swan</h3>
+          <!--duration-->
+          <span>108 min | Psychological</span>
         </div>
-         <!--box 5-->
-         <div class="box">
-            <!--displaying the photo-->
-            <div class="box-image">
-            <img src="movie posters/posters/movie 5.jpg">
-            </div>
-            <!--movie title -->
-            <h3>Howl's Moving Castle</h3>
-            <!--duration-->
-            <span>119 min | Ghibli</span>
+        <!--box 5-->
+        <div class="box">
+          <!--displaying the photo-->
+          <div class="box-image">
+            <img src="movie posters/posters/movie 5.jpg" />
+          </div>
+          <!--movie title -->
+          <h3>Howl's Moving Castle</h3>
+          <!--duration-->
+          <span>119 min | Ghibli</span>
         </div>
-         <!--box 6-->
-         <div class="box">
-            <!--displaying the photo-->
-            <div class="box-image">
-            <img src="movie posters/posters/movie 6.jpg">
-            </div>
-            <!--movie title -->
-            <h3>Inception</h3>
-            <!--duration-->
-            <span>148 min | Sci-Fi</span>
+        <!--box 6-->
+        <div class="box">
+          <!--displaying the photo-->
+          <div class="box-image">
+            <img src="movie posters/posters/movie 6.jpg" />
+          </div>
+          <!--movie title -->
+          <h3>Inception</h3>
+          <!--duration-->
+          <span>148 min | Sci-Fi</span>
         </div>
-         <!--box 7-->
-         <div class="box">
-            <!--displaying the photo-->
-            <div class="box-image">
-            <img src="movie posters/posters/movie 7.jpg">
-            </div>
-            <!--movie title -->
-            <h3>Blade Runner 2049</h3>
-            <!--duration-->
-            <span>169 min | Sci-Fi</span>
+        <!--box 7-->
+        <div class="box">
+          <!--displaying the photo-->
+          <div class="box-image">
+            <img src="movie posters/posters/movie 7.jpg" />
+          </div>
+          <!--movie title -->
+          <h3>Blade Runner 2049</h3>
+          <!--duration-->
+          <span>169 min | Sci-Fi</span>
         </div>
-         <!--box 8-->
-         <div class="box">
-            <!--displaying the photo-->
-            <div class="box-image">
-            <img src="movie posters/posters/movie 8.jpg">
-            </div>
-            <!--movie title -->
-            <h3>Shutter Island</h3>
-            <!--duration-->
-            <span>138 min | Mystery</span>
+        <!--box 8-->
+        <div class="box">
+          <!--displaying the photo-->
+          <div class="box-image">
+            <img src="movie posters/posters/movie 8.jpg" />
+          </div>
+          <!--movie title -->
+          <h3>Shutter Island</h3>
+          <!--duration-->
+          <span>138 min | Mystery</span>
         </div>
-         <!--box 9-->
-         <div class="box">
-            <!--displaying the photo-->
-            <div class="box-image">
-            <img src="movie posters/posters/movie 9.jpg">
-            </div>
-            <!--movie title -->
-            <h3>Deadpool & Wolverine</h3>
-            <!--duration-->
-            <span>127 min | Marvel</span>
+        <!--box 9-->
+        <div class="box">
+          <!--displaying the photo-->
+          <div class="box-image">
+            <img src="movie posters/posters/movie 9.jpg" />
+          </div>
+          <!--movie title -->
+          <h3>Deadpool & Wolverine</h3>
+          <!--duration-->
+          <span>127 min | Marvel</span>
         </div>
-         <!--box 10-->
-         <div class="box">
-            <!--displaying the photo-->
-            <div class="box-image">
-            <img src="movie posters/posters/movie 10.jpg">
-            </div>
-            <!--movie title -->
-            <h3>Last Night In Soho</h3>
-            <!--duration-->
-            <span>117 min | Thriller</span>
+        <!--box 10-->
+        <div class="box">
+          <!--displaying the photo-->
+          <div class="box-image">
+            <img src="movie posters/posters/movie 10.jpg" />
+          </div>
+          <!--movie title -->
+          <h3>Last Night In Soho</h3>
+          <!--duration-->
+          <span>117 min | Thriller</span>
         </div>
-         <!--box 11-->
-         <div class="box">
-            <!--displaying the photo-->
-            <div class="box-image">
-            <img src="movie posters/posters/movie 11.jpg">
-            </div>
-            <!--movie title -->
-            <h3>Inglourious Basterds</h3>
-            <!--duration-->
-            <span>153 min | War</span>
+        <!--box 11-->
+        <div class="box">
+          <!--displaying the photo-->
+          <div class="box-image">
+            <img src="movie posters/posters/movie 11.jpg" />
+          </div>
+          <!--movie title -->
+          <h3>Inglourious Basterds</h3>
+          <!--duration-->
+          <span>153 min | War</span>
         </div>
-         <!--box 12-->
-         <div class="box">
-            <!--displaying the photo-->
-            <div class="box-image">
-            <img src="movie posters/posters/movie 12.jpg">
-            </div>
-            <!--movie title -->
-            <h3>Atonement</h3>
-            <!--duration-->
-            <span>123 min | Romance</span>
+        <!--box 12-->
+        <div class="box">
+          <!--displaying the photo-->
+          <div class="box-image">
+            <img src="movie posters/posters/movie 12.jpg" />
+          </div>
+          <!--movie title -->
+          <h3>Atonement</h3>
+          <!--duration-->
+          <span>123 min | Romance</span>
         </div>
-         <!--box 13-->
-         <div class="box">
-            <!--displaying the photo-->
-            <div class="box-image">
-            <img src="movie posters/posters/movie 13.jpg">
-            </div>
-            <!--movie title -->
-            <h3>Memories Of Murder</h3>
-            <!--duration-->
-            <span>132 min | Crime</span>
+        <!--box 13-->
+        <div class="box">
+          <!--displaying the photo-->
+          <div class="box-image">
+            <img src="movie posters/posters/movie 13.jpg" />
+          </div>
+          <!--movie title -->
+          <h3>Memories Of Murder</h3>
+          <!--duration-->
+          <span>132 min | Crime</span>
         </div>
-         <!--box 14-->
-         <div class="box">
-            <!--displaying the photo-->
-            <div class="box-image">
-            <img src="movie posters/posters/movie 14.jpg">
-            </div>
-            <!--movie title -->
-            <h3>Pulp Fiction</h3>
-            <!--duration-->
-            <span>154 min | Crime</span>
+        <!--box 14-->
+        <div class="box">
+          <!--displaying the photo-->
+          <div class="box-image">
+            <img src="movie posters/posters/movie 14.jpg" />
+          </div>
+          <!--movie title -->
+          <h3>Pulp Fiction</h3>
+          <!--duration-->
+          <span>154 min | Crime</span>
         </div>
-         <!--box 15-->
-         <div class="box">
-            <!--displaying the photo-->
-            <div class="box-image">
-            <img src="movie posters/posters/movie 15.jpg">
-            </div>
-            <!--movie title -->
-            <h3>Your Name</h3>
-            <!--duration-->
-            <span>106 min | Anime</span>
+        <!--box 15-->
+        <div class="box">
+          <!--displaying the photo-->
+          <div class="box-image">
+            <img src="movie posters/posters/movie 15.jpg" />
+          </div>
+          <!--movie title -->
+          <h3>Your Name</h3>
+          <!--duration-->
+          <span>106 min | Anime</span>
         </div>
-        </div>
+      </div>
+    </section>
 
-        </section>
-
-
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <!--link to js page-->
-        <script src="main.js"></script>
-    </body>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--link to js page-->
+    <script src="main.js"></script>
+  </body>
 </html>
