@@ -15,35 +15,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <title>Neon Cinema</title>
+
+    <!--Link for social media icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
 
   <body>
-    <!--navigation bar-->
-    <header>
-      <!--logo-->
-
-      <a href="#" class="logo">
-        <img src="logo/neon cinema.png" width="200px" />
-      </a>
-
-      <!--more botton-->
-      <div class="bx bx-menu" id="menu-icon"></div>
-
-      <!--menu-->
-      <ul class="navbar">
-        <li><a href="#home" class="actvt-home">Home</a></li>
-        <li><a href="#movies">What's On</a></li>
-        <li><a href="#coming">Coming soon</a></li>
-        <li><a href="#Newsletter">Newsletter</a></li>
-      </ul>
-      <a href="#" class="btn">Sign in</a>
-    </header>
-
-    <!--I use <section> when:
-       You want to break your page into sections with distinct themes or content.
-       The content in the section is related and can be described as a standalone part of the page.
-       You want to improve the accessibility and semantic structure of your page.-->
+    <special-header></special-header>
 
     <!--Swiper-->
     <section class="home swiper" id="home">
@@ -269,9 +250,88 @@
       </div>
     </section>
 
+    <!--coming soon section-->
+    <section class="coming" id="coming">
+      <h2 class="heading">Coming Soon</h2>
+      <!--coming counter-->
+
+      <div class="coming-container swiper">
+        <div class="swiper-wrapper">
+          <!--box 1-->
+          <div class="swiper-slide box">
+            <!--displaying the photo-->
+            <div class="box-image">
+              <img src="movie posters/coming/coming 1.jpg" />
+            </div>
+            <!--movie title -->
+            <h3>Heart Eyes</h3>
+            <!--about-->
+            <span>Romance Is Dead</span>
+          </div>
+
+          <!--box2-->
+          <div class="swiper-slide box">
+            <!--displaying the photo-->
+            <div class="box-image">
+              <img src="movie posters/coming/coming 2.jpg" />
+            </div>
+            <!--movie title -->
+            <h3>NovaCane</h3>
+            <!--about-->
+            <span>Nethan Cane Can't Feel Pain</span>
+          </div>
+
+          <!--box3-->
+          <div class="swiper-slide box">
+            <!--displaying the photo-->
+            <div class="box-image">
+              <img src="movie posters/coming/coming 3.jpg" />
+            </div>
+            <!--movie title -->
+            <h3>Last Breath</h3>
+            <!--about-->
+            <span>Make Every Breath Count</span>
+          </div>
+
+          <!--box4-->
+          <div class="swiper-slide box">
+            <!--displaying the photo-->
+            <div class="box-image">
+              <img src="movie posters/coming/coming 4.jpg" />
+            </div>
+            <!--movie title -->
+            <h3>Snow White</h3>
+            <!--about-->
+            <span>Welcome Back To Disney</span>
+          </div>
+
+          <!--box5-->
+          <div class="swiper-slide box">
+            <!--displaying the photo-->
+            <div class="box-image">
+              <img src="movie posters/coming/coming 5.jpg" />
+            </div>
+            <!--movie title -->
+            <h3>Captain America</h3>
+            <!--about-->
+            <span>Brave New World</span>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <special-footer></special-footer>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!--link to js page-->
+
+    <script src="headerFooter.js"></script>
     <script src="main.js"></script>
+    <script>
+      const list = document.getElementsByClassName("navbar");
+      list[0].children[0].children[0].classList.add("actvt-home");
+    </script>
   </body>
 </html>
