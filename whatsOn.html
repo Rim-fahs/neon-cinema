@@ -15,36 +15,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <title>Neon Cinema</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    
   </head>
 
   <body>
-    <!--navigation bar-->
-    <header>
-      <!--logo-->
+    <special-header></special-header>
 
-      <a href="#" class="logo">
-        <img src="logo/neon cinema.png" width="200px" />
-      </a>
-
-      <!--more botton-->
-      <div class="bx bx-menu" id="menu-icon"></div>
-
-      <!--menu-->
-      <ul class="navbar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#movies" class="actvt-home">What's On</a></li>
-        <li><a href="#coming">Coming soon</a></li>
-        <li><a href="#Newsletter">Newsletter</a></li>
-      </ul>
-      <a href="#" class="btn">Sign in</a>
-    </header>
-
-    <div class="movie-whatson">
+    <div class="movie-section">
       <div class="movie-box">
         <div class="title">
           <h1>Interstellar</h1>
-          <div class="rating">PG</div>
+          <div class="rating">PG-13</div>
         </div>
 
         <div class="movie-details">
@@ -135,20 +121,22 @@
         </div>
       </section>
     </div>
+
+
+
+    <special-footer></special-footer>
+
+
     <!--link to js page-->
+    <script src="headerFooter.js"></script>
     <script src="main.js"></script>
-    <script src="rating.js"></script>
-
     
-     <!-- <script type="module" defer> -->
-      <!--import { data } from "./data.js";
 
-      const pathname = window.location.pathname;
-      const params = new URLSearchParams(window.location.search);
-      console.log("params", params);
-      console.log("pathname", pathname);
-      const movie = data.find((movie) => movie.id === pathname);
-      console.log("data", data); -->
+
+    <script>
+      const list = document.getElementsByClassName("navbar");
+      list[0].children[1].children[0].classList.add("actvt-home");
     </script>
+
   </body>
 </html>
