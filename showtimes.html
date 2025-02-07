@@ -1,43 +1,167 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="icon" href="logo/neon logo.png" type="image/icon" />
-    <title>Neon Cinema</title>
-    <!--link to stylesheet-->
-    <link rel="stylesheet" href="stylesheetneon.css" />
-    <!--link to boxicons-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <title>Neon Cinema</title>
-  </head>
 
-  <body>
-    <!--navigation bar-->
-    <header>
-      <!--logo-->
+<head>
+  <link rel="icon" href="logo/neon logo.png" type="image/icon" />
+  <title>Neon Cinema</title>
 
-      <a href="#" class="logo">
-        <img src="logo/neon cinema.png" width="200px" />
-      </a>
+  <link rel="stylesheet" href="stylesheetneon.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="showtimes.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Neon Cinema</title>
+</head>
 
-      <!--more botton-->
-      <div class="bx bx-menu" id="menu-icon"></div>
+<body>
+  <!--navigation bar-->
+  <header>
+    <!--logo-->
 
-      <!--menu-->
-      <ul class="navbar">
-        <li><a href="#home" class="actvt-home">Home</a></li>
-        <li><a href="#movies">What's On</a></li>
-        <li><a href="#coming">Coming soon</a></li>
-        <li><a href="#Newsletter">Newsletter</a></li>
-      </ul>
-      <a href="#" class="btn">Sign in</a>
-    </header>
-  </body>
+    <a href="#" class="logo">
+      <img src="logo/neon cinema.png" width="200px" />
+    </a>
+
+    <!--more botton-->
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <!--menu-->
+    <ul class="navbar">
+      <li><a href="#home" class="actvt-home">Home</a></li>
+      <li><a href="#movies">What's On</a></li>
+      <li><a href="#coming">Coming soon</a></li>
+      <li><a href="#Newsletter">Newsletter</a></li>
+    </ul>
+    <a href="#" class="btn">Sign in</a>
+  </header>
+
+
+  <div class="movies-showtimes">
+    <div class="movie-container">
+      <div class="showtimes-title">
+        <h1>SHOWTIMES</h1>
+      </div>
+
+
+      <div class="movie-poster">
+        <img src="movie posters\posters\movie 1.jpg" alt="Interstellar"
+          style="height: 700px;width: 450px;  border-radius: 7%;">
+        <div class="movie-name-date">
+          <div class="movie-name">
+            Interstaller Showtimes:
+          </div>
+          <div class="movie-dates">
+            <table class="showtimes-table">
+              <thead>
+                <tr>
+                  <th>Screen</th>
+                  <th>Showtime</th>
+                  <th>Available Seats</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Screen 1</td>
+                  <td>12:00 PM</td>
+                  <td>50</td>
+                </tr>
+
+                <tr>
+                  <td>Screen 2</td>
+                  <td>03:00 PM</td>
+                  <td>90</td>
+                </tr>
+
+
+                <tr>
+                  <td>Screen 3</td>
+                  <td>04:30 PM</td>
+                  <td>75</td>
+                </tr>
+
+                <tr>
+                  <td>Screen 4</td>
+                  <td>05:45 PM</td>
+                  <td>50</td>
+                </tr>
+
+                <tr>
+                  <td>Screen 5</td>
+                  <td>8:00 PM</td>
+                  <td>20</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <a href="#booknow-container" class="book-now-btn">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="booknow">
+    <div class="h1">
+      <h1>Book now</h1>
+    </div>
+
+    <div id="booknow-container">
+      <h2>Book your ticket now!</h2>
+      <form>
+        <div class="form-group">
+          <label>E-mail</label>
+          <input type="email" placeholder="Enter a valid email address" required>
+        </div>
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" placeholder="Enter your Name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Time</label>
+          <select>
+            <option>12:00 PM </option>
+            <option>3:00 PM </option>
+            <option>4:30 PM</option>
+            <option>2:15 PM</option>
+            <option>5:45 PM</option>
+            <option>8:00 PM</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Date</label>
+          <input type="date" required>
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" placeholder="Enter your phone number (e.g. +961------)" required>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Enter your message"></textarea>
+        </div>
+        <button class="button" onclick="openPopup(event)">Submit</a>
+      </form>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+  <div id="thankYouPopup" class="popup">
+    <div class="popup-content">
+      <img src="https://i.postimg.cc/R0nBqZ89/check-check-mark-mark-tick-svgrepo-com.png" alt="Success"
+        class="popup-image">
+      <h2>Thank You!</h2>
+      <p>You have succesfully booked in Neon cinema</p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
+
+  <script src="showtime.js"></script>
+
+
+</body>
+
 </html>
