@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="logo/neon logo.png" type="image/icon" />
+    <title>Neon Cinema</title>
+    <!--link to stylesheet-->
+    <link rel="stylesheet" href="stylesheetneon.css" />
+    <!--link to boxicons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="stylesheetwhatsOn.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="stylesheetComingSoon.css" />
+  </head>
+
+  <body>
+    <special-header></special-header>
+
+    <div class="movie-section">
+      <div class="movie-box">
+        <div class="title">
+          <h1>Interstellar</h1>
+          <div class="rating">PG-13</div>
+        </div>
+
+        <div class="movie-details">
+          <div class="poster">
+            <img src="movie posters\posters\movie 1.jpg" alt="Interstellar" />
+          </div>
+          <div class="trailer">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/zSWdZVtXT7E?si=N1-ioabJmkskKGGP"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="movie-info">
+      <hr class="dashed" />
+      <div class="info">
+        <aside>
+          <p><strong>Genre:</strong> Science Fiction , Drama</p>
+          <p><strong>Director:</strong> Christopher Nolan</p>
+          <p><strong>Running Time:</strong> 2h 49m</p>
+          <p><strong>Release Date:</strong> 7 November 2014</p>
+          <p>
+            <strong>Starring:</strong> Matthew McConaughey, Anne Hathaway,
+            Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine
+          </p>
+          <p><strong>Language:</strong> English</p>
+          <p><strong>Subtitles:</strong> Arabic</p>
+        </aside>
+
+        <article>
+          <p>
+            With humanity teetering on the brink of extinction, a group of
+            astronauts travels through a wormhole in search of another
+            inhabitable planet.
+          </p>
+        </article>
+      </div>
+
+      <hr class="dashed" />
+    </section>
+
+    <!--coming soon section-->
+    <section class="coming" id="coming"> 
+      <h2 class="heading">Coming Soon</h2>
+      <!--coming counter-->
+
+      <div class="swiper coming-container">
+        <div class="swiper-wrapper">
+          <!--box 1-->
+          <div class="swiper-slide box">
+            <!--displaying the photo-->
+            <div class="box-image">
+              <img src="movie posters/coming/coming 1.jpg" />
+            </div>
+            <!--movie title -->
+            <h3>Heart Eyes</h3>
+            <!--about-->
+            <span>Romance Is Dead</span>
+          </div>
+
+          <!--box2-->
+          <div class="swiper-slide box">
+            <!--displaying the photo-->
+            <div class="box-image">
+              <img src="movie posters/coming/coming 2.jpg" />
+            </div>
+            <!--movie title -->
+            <h3>NovaCane</h3>
+            <!--about-->
+            <span>Nethan Cane Can't Feel Pain</span>
+          </div>
+
+          <!--box3-->
+          <div class="swiper-slide box">
+            <!--displaying the photo-->
+            <div class="box-image">
+              <img src="movie posters/coming/coming 3.jpg" />
+            </div>
+            <!--movie title -->
+            <h3>Last Breath</h3>
+            <!--about-->
+            <span>Make Every Breath Count</span>
+          </div>
+
+          <!--box4-->
+          <div class="swiper-slide box">
+            <!--displaying the photo-->
+            <div class="box-image">
+              <img src="movie posters/coming/coming 4.jpg" />
+            </div>
+            <!--movie title -->
+            <h3>Snow White</h3>
+            <!--about-->
+            <span>Welcome Back To Disney</span>
+          </div>
+
+          <!--box5-->
+          <div class="swiper-slide box">
+            <!--displaying the photo-->
+            <div class="box-image">
+              <img src="movie posters/coming/coming 5.jpg" />
+            </div>
+            <!--movie title -->
+            <h3>Captain America</h3>
+            <!--about-->
+            <span>Brave New World</span>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    
+    <special-footer></special-footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--link to js page-->
+    <script src="headerFooter.js"></script>
+    <script src="main.js"></script>
+
+    <script>
+      const list = document.getElementsByClassName("navbar");
+      list[0].children[2].children[0].classList.add("actvt-home");
+    </script>
+  </body>
+</html>
