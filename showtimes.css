@@ -1,7 +1,7 @@
 .movie-container {
   display: flex;
   flex-direction: column;
-  margin: 120px;
+  margin: 150px;
   padding: 20px;
 }
 
