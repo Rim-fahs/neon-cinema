@@ -15,11 +15,6 @@
   padding-bottom: 10px;
 }
 
-.movie-title {
-  padding: 10px;
-  font-size: large;
-  margin: -20px;
-}
 
 .movie-poster {
   display: flex;
@@ -42,12 +37,13 @@
   color: transparent;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   padding-right: 50px;
+  padding-bottom: 10px;
 }
 
 .movie-dates {
   display: flex;
   flex-direction: row;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .showtimes-table {
