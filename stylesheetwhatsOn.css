@@ -127,6 +127,7 @@ article {
 
 .movie-reviews {
   padding-right: 600px;
+  padding-bottom: 300px;
 }
 
 .review {
@@ -138,9 +139,9 @@ article {
     
 }
 h2 {
-  color: whitesmoke;
+  color: rgb(245, 245, 245);
 
-  padding-bottom: 70px;
+  padding-bottom: 30px;
 }
 
 .ratings .fa-star {
@@ -160,7 +161,7 @@ h2 {
 }
 
 .review h3{
-    color: whitesmoke;
+    color: grey;
 }
 
 .review textarea {
