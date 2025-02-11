@@ -1,5 +1,3 @@
-
-
 function openPopup(event) {
     event.preventDefault();
 
