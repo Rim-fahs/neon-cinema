@@ -1,9 +1,8 @@
-
 class SpecialHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <header>
-    <a href="/" class="logo">
+    <a href="neon-cinema/" class="logo">
     <img src="logo/neon cinema.png" width="200px" />
     </a>
     
@@ -12,9 +11,9 @@ class SpecialHeader extends HTMLElement {
     
     <!-- Menu -->
     <ul class="navbar">
-    <li ><a href="/#home">Home</a></li>
-    <li><a href="/#movies">What's On</a></li>
-    <li><a href="/#coming">Coming soon</a></li>
+    <li ><a href="neon-cinema/#home">Home</a></li>
+    <li><a href="neon-cinema/#movies">What's On</a></li>
+    <li><a href="neon-cinema/#coming">Coming soon</a></li>
     <li><a href="#about">About</a></li>
     </ul>
     <a href="#" class="btn" id="signInBtn">Sign in</a>
@@ -36,56 +35,54 @@ class SpecialHeader extends HTMLElement {
             
             </header>
             `;
-            
-            document.addEventListener("DOMContentLoaded", function () {
-              const signInBtn = document.querySelector("#signInBtn");
-              const loginForm = document.querySelector("#loginForm");
-              const closeFormBtn = document.querySelector("#closeForm");
-              const signInForm = document.querySelector("#signInForm");
-              const userIcon = document.querySelector("#userIcon");
-          
-              // Check if username is stored in sessionStorage
-              const savedUsername = sessionStorage.getItem("username");
-          
-              if (savedUsername) {
-                  signInBtn.style.display = "none"; 
-                  userIcon.textContent = savedUsername.charAt(0).toUpperCase(); 
-                  userIcon.style.display = "inline-block"; 
-              }
-          
-              // Show login form when clicking sign in
-              signInBtn.addEventListener("click", function (event) {
-                  event.preventDefault();
-                  loginForm.style.display = "block";
-              });
-          
-              // Close login form
-              closeFormBtn.addEventListener("click", function () {
-                  loginForm.style.display = "none";
-              });
-          
-              // Handle form submission
-              signInForm.addEventListener("submit", function (event) {
-                  event.preventDefault();
-          
-                  const username = document.getElementById("username").value.trim();
-          
-                  if (username !== "") {
-                      sessionStorage.setItem("username", username); // Store username in sessionStorage
-                      signInBtn.style.display = "none"; 
-                      userIcon.textContent = username.charAt(0).toUpperCase(); 
-                      userIcon.style.display = "inline-block"; 
-                      loginForm.style.display = "none"; 
-                  }
-              });
-          });
-          
-          
-          }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const signInBtn = document.querySelector("#signInBtn");
+      const loginForm = document.querySelector("#loginForm");
+      const closeFormBtn = document.querySelector("#closeForm");
+      const signInForm = document.querySelector("#signInForm");
+      const userIcon = document.querySelector("#userIcon");
+
+      // Check if username is stored in sessionStorage
+      const savedUsername = sessionStorage.getItem("username");
+
+      if (savedUsername) {
+        signInBtn.style.display = "none";
+        userIcon.textContent = savedUsername.charAt(0).toUpperCase();
+        userIcon.style.display = "inline-block";
+      }
+
+      // Show login form when clicking sign in
+      signInBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        loginForm.style.display = "block";
+      });
+
+      // Close login form
+      closeFormBtn.addEventListener("click", function () {
+        loginForm.style.display = "none";
+      });
+
+      // Handle form submission
+      signInForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const username = document.getElementById("username").value.trim();
+
+        if (username !== "") {
+          sessionStorage.setItem("username", username); // Store username in sessionStorage
+          signInBtn.style.display = "none";
+          userIcon.textContent = username.charAt(0).toUpperCase();
+          userIcon.style.display = "inline-block";
+          loginForm.style.display = "none";
         }
-        class SpecialFooter extends HTMLElement {
-          connectedCallback() {
-            this.innerHTML = `
+      });
+    });
+  }
+}
+class SpecialFooter extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
             <footer class="footer" id="about">
             <div class="about-container">
             <div class="footer-row">
@@ -101,8 +98,8 @@ class SpecialHeader extends HTMLElement {
             <div class="footer-col">
             <h4>Exploring Our Site</h4>
             <ul>
-            <li><a href="/#movies">What's On</a></li>
-            <li><a href="/#coming">Coming Soon</a></li>
+            <li><a href="neon-cinema/#movies">What's On</a></li>
+            <li><a href="neon-cinema/#coming">Coming Soon</a></li>
             <li><a href="FoodDrinks.html">Food &amp; Drinks</a></li>
             </ul>
             </div>
@@ -123,16 +120,14 @@ class SpecialHeader extends HTMLElement {
             </div>
             </footer>
             `;
-          }
-        }
-        
-        customElements.define("special-header", SpecialHeader);
-        customElements.define("special-footer", SpecialFooter);
+  }
+}
 
-        //header shadow
-        let header = document.querySelector("header");
-        window.addEventListener("scroll", () => {
-          header.classList.toggle("shadow", window.scrollY > 0);
-        });
+customElements.define("special-header", SpecialHeader);
+customElements.define("special-footer", SpecialFooter);
 
-
+//header shadow
+let header = document.querySelector("header");
+window.addEventListener("scroll", () => {
+  header.classList.toggle("shadow", window.scrollY > 0);
+});
