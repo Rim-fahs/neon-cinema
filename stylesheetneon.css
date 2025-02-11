@@ -1,5 +1,4 @@
 /*fonts:*/
-/*Google fonts (jbtn mn google fornts w 3mltln import*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap");
 * {
   font-family: "Poppins", sans-serif;
@@ -11,7 +10,7 @@
   scroll-padding-top: 2rem;
   scroll-behavior: smooth;
 }
-/*some variables*/
+
 :root {
   --main-color-: #3abef9;
   --text-color-: #faf7f0;
@@ -30,7 +29,7 @@ body {
   color: var(--text-color-);
 }
 
-/* Fullscreen video styling */
+
 #video-container {
   position: fixed;
   top: 0;
@@ -78,18 +77,17 @@ header.shadow {
   font-size: 50px;
 }
 
-/*hay b23tebar l div l wes3a lal navigation as a wider container*/
+
 .navbar {
   display: flex;
   column-gap: 5rem;
 }
 
-/*hy navigation elements*/
 .navbar li {
   position: relative;
 }
 
-/*hyde per l element l whde */
+
 .navbar a {
   font-size: 1rem;
   font-weight: 500;
@@ -97,7 +95,7 @@ header.shadow {
 }
 
 .navbar a::after {
-  content: ""; /*adds line mn ta7et*/
+  content: ""; 
   width: 0%;
   height: 2px;
   background: linear-gradient(45deg, #9336b4, #95389e, #ff1bde);
@@ -107,13 +105,13 @@ header.shadow {
   transition: 0.4s all linear;
 }
 
-/*hover yaane bas ttl3 l mouse aalya shu ele bytghyr ka animation*/
+
 .navbar a:hover::after,
 .navbar .actvt-home::after {
   width: 100%;
 }
 
-/*l menu button halaa l7 hotela l features bas m l7 a3mla display ella eza eemlt l code responsive aala mobile aw she*/
+
 #menu-icon {
   font-size: 24px;
   cursor: pointer;
@@ -122,7 +120,7 @@ header.shadow {
   display: none;
 }
 
-/*displaying the button*/
+
 
 .btn {
   display: flex;
@@ -175,11 +173,6 @@ header.shadow {
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
   opacity: 1;
-  /*Possible Values for opacity:
-0: The element is completely transparent (invisible).
-1: The element is completely opaque (fully visible).
-Any value between 0 and 1: The element will have varying degrees of transparency. For example,
-0.5 means 50% transparent, where the element is partially visible, and the background can be seen through it.*/
 }
 @keyframes glowing {
   0% {
@@ -193,7 +186,7 @@ Any value between 0 and 1: The element will have varying degrees of transparency
   }
 }
 
-/**/
+
 .btn:hover::before {
   opacity: 1;
 }
@@ -217,14 +210,14 @@ Any value between 0 and 1: The element will have varying degrees of transparency
 .movie-title span {
   font-weight: 500;
   text-transform: uppercase;
-  display: block; /* Make span a block element */
+  display: block;
   margin-bottom: 0.5rem;
-  font-size: 1.2rem; /* Add proper sizing */
+  font-size: 1.2rem;
   color: var(--second-color); 
 }
 
 .movie-title h1 {
-  font-size: 3rem; /* Ensure proper sizing */
+  font-size: 3rem; 
   margin-bottom: 1.5rem;
   position: static; /* Remove absolute positioning */
   
@@ -233,7 +226,7 @@ Any value between 0 and 1: The element will have varying degrees of transparency
 
 .movie-title .btn {
   color: var(--text-color-);
-  width: 125px; /* Set a fixed width */
+  width: 125px; 
   align-items: center;
   display: flex;
   padding: 0.7rem 1.4rem;
@@ -245,11 +238,11 @@ Any value between 0 and 1: The element will have varying degrees of transparency
   z-index: 1;
   text-align: center;
 }
-/* Swiper Container */
+
 .swiper {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full height of the viewport */
+  height: 100vh;
 }
 .swiper-slide {
   position: relative;
@@ -294,35 +287,24 @@ Any value between 0 and 1: The element will have varying degrees of transparency
 
 .movies-container {
   max-width: 968px;
-  /*max-width helps make sure that elements like images, containers,
-    or divs do not stretch beyond a
-    certain point on large screenstorte, preventing overflowing.*/
   margin-right: auto;
   margin-left: auto;
   display: grid;
-  /*two-dimensional layouts with rows and columns, where you can control the alignment, sizing, and positioning of elements easily.*/
   grid-template-columns: repeat(auto-fit, minmax(180px, auto));
-  /*This rule creates a grid layout where each column will be at least 180px wide, but it can grow in size based on the available space.*/
   margin-top: 2rem;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px; /* Space between boxes */
+  gap: 16px;
   justify-content: center;
   padding-top: 10px;
 }
-/*auto-fit tries to fit as many columns as possible in the grid, based on the width of the container and the minimum column width.*/
-
-/*minmax(180,auto):minmax() is a function that defines a range for the column size.
-180px is the minimum size for each column. This means each column will be at least 180px wide.
-auto is the maximum size, which means the column can grow beyond 180px if there is extra space available in the container. 
-It will stretch as far as needed, but it will never shrink smaller than 180px.*/
 
 .box {
-  width: 250px; /* Fixed width for the movie box */
+  width: 250px;
   background-color: transparent;
   border-radius: 8px;
-  overflow: hidden; /* Prevents the image from overflowing the box */
+  overflow: hidden; 
   transition: transform 0.3s ease-in-out;
 }
 /*effect*/
@@ -332,7 +314,7 @@ It will stretch as far as needed, but it will never shrink smaller than 180px.*/
   ); /* Slight zoom effect on hover activating transition */
 }
 
-/*image inside*/
+
 .box-image img {
   width: 100%;
   height: 350px;
@@ -340,7 +322,7 @@ It will stretch as far as needed, but it will never shrink smaller than 180px.*/
   border-radius: 8px;
 }
 
-/* Movie Title */
+
 .box h3 {
   font-size: 1rem;
   text-align: center;
@@ -363,23 +345,20 @@ It will stretch as far as needed, but it will never shrink smaller than 180px.*/
 
 .coming-container {
   max-width: 800px;
-  /*max-width helps make sure that elements like images, containers,
-    or divs do not stretch beyond a
-    certain point on large screenstorte, preventing overflowing.*/
   margin-right: auto;
   margin-left: auto;
   margin-top: 2rem;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px; /* Space between boxes */
+  gap: 16px; 
   justify-content: center;
   padding-top: 10px;
 }
 
 .coming-container .box-image img {
-  object-fit: cover; /* Ensures the image covers the area without distorting */
-  object-position: center; /* Ensures the image is centered within the container */
+  object-fit: cover;
+  object-position: center;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -425,7 +404,7 @@ It will stretch as far as needed, but it will never shrink smaller than 180px.*/
   box-sizing: border-box;
   width: 90px;
 }
-/*this one means kelon m3ada ekhr col ele heye stay in touch*/
+
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }

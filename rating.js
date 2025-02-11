@@ -37,17 +37,14 @@ const closeModal = document.getElementById("close-modal");
 const textarea = document.querySelector("textarea");
 
 const onSubmit = () => {
-  // Show the modal
   modal.classList.remove("hidden");
 };
 
 closeModal.addEventListener("click", () => {
-  // Hide the modal
   modal.classList.add("hidden");
 
   // Reset the stars to their default state
   clearActive();
 
-  // Clear the textarea value
   textarea.value = "";
 });

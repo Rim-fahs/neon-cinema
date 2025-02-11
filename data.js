@@ -22,7 +22,6 @@ export const movies = [
       { screen: "Screen3", time: "2:00 PM", Seats: 80 },
       { screen: "Screen4", time: "3:00 PM", Seats: 90 },
       { screen: "Screen5", time: "4:00 PM", Seats: 100 },
-      
     ],
   },
   {
@@ -41,13 +40,12 @@ export const movies = [
     subtitles: "Arabic",
     description:
       "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
-      date: "Available from 6 Feb to 27 Feb",
+    date: "Available from 6 Feb to 27 Feb",
     showTimes: [
       { screen: "Screen1", time: "1:00 PM", Seats: 50 },
       { screen: "Screen2", time: "3:00 PM", Seats: 60 },
       { screen: "Screen3", time: "6:00 PM", Seats: 60 },
       { screen: "Screen4", time: "8:00 PM", Seats: 80 },
-      
     ],
   },
 
@@ -67,14 +65,13 @@ export const movies = [
     subtitles: "Arabic",
     description:
       "Andy Dufresne, a banker wrongly convicted of murder, forms a friendship with Red, an inmate, and seeks redemption through hope, patience, and an unbreakable will.",
-      date: "Available from 9 Feb to 1 March",
+    date: "Available from 9 Feb to 1 March",
     showTimes: [
       { screen: "Screen1", time: "10:00 AM", Seats: 70 },
       { screen: "Screen2", time: "12:00 PM", Seats: 40 },
       { screen: "Screen3", time: "2:00 PM", Seats: 50 },
       { screen: "Screen4", time: "8:00 PM", Seats: 30 },
       { screen: "Screen5", time: "10:00 PM", Seats: 80 },
-      
     ],
   },
 
@@ -94,14 +91,13 @@ export const movies = [
     subtitles: "Arabic",
     description:
       "A talented dancer struggles to maintain her mental health and her place in the lead role of a New York City ballet production, as she descends into a nightmarish world of obsession and delusion.",
-      date: "Available from 8 Feb to 5 March",
+    date: "Available from 8 Feb to 5 March",
     showTimes: [
       { screen: "Screen1", time: "12:00 PM", Seats: 50 },
       { screen: "Screen2", time: "1:00 PM", Seats: 70 },
       { screen: "Screen3", time: "2:00 PM", Seats: 68 },
       { screen: "Screen4", time: "3:00 PM", Seats: 100 },
       { screen: "Screen5", time: "4:00 PM", Seats: 80 },
-      
     ],
   },
 
@@ -120,13 +116,12 @@ export const movies = [
     subtitles: "English",
     description:
       "When a young woman is cursed by a witch, she transforms into an elderly woman and seeks refuge in a mysterious moving castle, where she meets a reclusive wizard and embarks on an extraordinary journey.",
-      date: "Available from 5 Feb to 25 Feb",
+    date: "Available from 5 Feb to 25 Feb",
     showTimes: [
-      { screen: "Screen1", time: "10:00 AM",Seats: 100 },
-      { screen: "Screen2", time: "12:00 PM",Seats: 80 },
-      { screen: "Screen3", time: "3:00 PM",Seats: 70 },
-      { screen: "Screen4", time: "5:00 PM",Seats: 60 },
-      
+      { screen: "Screen1", time: "10:00 AM", Seats: 100 },
+      { screen: "Screen2", time: "12:00 PM", Seats: 80 },
+      { screen: "Screen3", time: "3:00 PM", Seats: 70 },
+      { screen: "Screen4", time: "5:00 PM", Seats: 60 },
     ],
   },
 
@@ -146,7 +141,7 @@ export const movies = [
     subtitles: "Arabic",
     description:
       "A skilled thief is tasked with planting an idea into the mind of a CEO through the use of dream manipulation, leading to an action-packed, mind-bending heist across multiple dream layers.",
-      date: "Available from 5 Feb to 5 March",
+    date: "Available from 5 Feb to 5 March",
     showTimes: [
       { screen: "Screen1", time: "3:00 PM", Seats: 90 },
       { screen: "Screen2", time: "7:00 PM", Seats: 30 },
@@ -161,7 +156,7 @@ export const movies = [
     rating: "R",
     image: "movie posters/posters/movie 7.jpg",
     tagline: "Welcome The Future",
-    swiperImage:"movie posters/swipers/swipe 1.jpg",
+    swiperImage: "movie posters/swipers/swipe 1.jpg",
     trailer: "https://www.youtube.com/embed/gCcx85zbxz4?si=uxzVfivU_NioZIqx",
     genre: "Sci-Fi",
     director: "Denis Villeneuve",
@@ -173,13 +168,12 @@ export const movies = [
     subtitles: "Arabic",
     description:
       "A young blade runner uncovers a long-buried secret that could reshape society, leading him on a journey to find Rick Deckard, a former blade runner who has been missing for three decades.",
-      date: "Available from 10 Feb to 1 March",
+    date: "Available from 10 Feb to 1 March",
     showTimes: [
-      { screen: "Screen1", time: "10:00 AM",Seats: 80 },
-      { screen: "Screen2", time: "12:00 PM",Seats: 60},
-      { screen: "Screen3", time: "2:00 PM",Seats: 90 },
-      { screen: "Screen4", time: "7:00 PM",Seats: 40 },
-      
+      { screen: "Screen1", time: "10:00 AM", Seats: 80 },
+      { screen: "Screen2", time: "12:00 PM", Seats: 60 },
+      { screen: "Screen3", time: "2:00 PM", Seats: 90 },
+      { screen: "Screen4", time: "7:00 PM", Seats: 40 },
     ],
   },
 
@@ -199,14 +193,13 @@ export const movies = [
     subtitles: "Arabic",
     description:
       "A U.S. Marshal investigates the disappearance of a prisoner from a mental institution located on a remote island, leading to a psychological journey filled with twists and dark revelations.",
-      date: "Available from 5 Feb to 10 March",
+    date: "Available from 5 Feb to 10 March",
     showTimes: [
       { screen: "Screen1", time: "12:00 PM", Seats: 50 },
       { screen: "Screen2", time: "1:00 PM", Seats: 80 },
       { screen: "Screen3", time: "2:00 PM", Seats: 60 },
       { screen: "Screen4", time: "5:00 PM", Seats: 70 },
       { screen: "Screen5", time: "8:00 PM", Seats: 40 },
-      
     ],
   },
 
@@ -226,13 +219,12 @@ export const movies = [
     subtitles: "Arabic",
     description:
       "Deadpool is offered a place in the Marvel Cinematic Universe by the Time Variance Authority, but instead recruits a variant of Wolverine to save his universe from extinction.",
-      date: "Available from 3 Feb to 18 Feb",
+    date: "Available from 3 Feb to 18 Feb",
     showTimes: [
       { screen: "Screen1", time: "11:00 AM", Seats: 100 },
       { screen: "Screen2", time: "1:00 PM", Seats: 50 },
       { screen: "Screen3", time: "3:00 PM", Seats: 80 },
-      { screen: "Screen4", time: "7:00 PM", Seats: 90},
-      
+      { screen: "Screen4", time: "7:00 PM", Seats: 90 },
     ],
   },
 
@@ -242,7 +234,7 @@ export const movies = [
     rating: "R",
     image: "movie posters/posters/movie 10.jpg",
     tagline: "Check Anya Taylor Latest Works",
-    swiperImage:"movie posters/swipers/swipe 3.jpg",
+    swiperImage: "movie posters/swipers/swipe 3.jpg",
     trailer: "https://www.youtube.com/embed/AcVnFrxjPjI?si=ZIkxv_uUDQYjlwg_",
     genre: "Thriller",
     director: "	Edgar Wright",
@@ -254,14 +246,13 @@ export const movies = [
     subtitles: "Arabic",
     description:
       "Aspiring fashion designer Eloise is mysteriously able to return to 1960s London, where she encounters dazzling wannabe singer Sandie. But the glamour is not as it seems, and the dreams of the past crack and splinter into something darker.",
-      date: "Available from 1 Feb to 26 Feb",
+    date: "Available from 1 Feb to 26 Feb",
     showTimes: [
       { screen: "Screen1", time: "12:00 PM", Seats: 30 },
       { screen: "Screen2", time: "3:00 PM", Seats: 80 },
       { screen: "Screen3", time: "5:00 PM", Seats: 70 },
       { screen: "Screen4", time: "7:00 PM", Seats: 60 },
       { screen: "Screen5", time: "10:00 PM", Seats: 40 },
-      
     ],
   },
 
@@ -280,13 +271,12 @@ export const movies = [
     subtitles: "Arabic",
     description:
       "A group of Jewish-American soldiers plot to assassinate Nazi leaders during World War II, while a French Jewish theater owner seeks revenge on those who destroyed her family.",
-      date: "Available from 10 Feb to 10 March",
+    date: "Available from 10 Feb to 10 March",
     showTimes: [
       { screen: "Screen1", time: "12:00 PM", Seats: 50 },
       { screen: "Screen3", time: "3:00 PM", Seats: 80 },
       { screen: "Screen4", time: "6:00 PM", Seats: 30 },
       { screen: "Screen5", time: "9:00 PM", Seats: 90 },
-      
     ],
   },
 
@@ -305,13 +295,12 @@ export const movies = [
     subtitles: "Arabic",
     description:
       "A young girl makes a false accusation that changes the lives of two lovers, leading to a series of events that unfold over the years during World War II.",
-      date: "Available from 8 Feb to 28 Feb",
+    date: "Available from 8 Feb to 28 Feb",
     showTimes: [
       { screen: "Screen1", time: "12:00 PM", Seats: 50 },
       { screen: "Screen2", time: "3:00 PM", Seats: 60 },
       { screen: "Screen3", time: "5:00 PM", Seats: 80 },
       { screen: "Screen4", time: "9:00 PM", Seats: 30 },
-      
     ],
   },
 
@@ -330,14 +319,13 @@ export const movies = [
     subtitles: "Arabic",
     description:
       "In 1986, two detectives investigate a series of brutal murders in a small Korean province, uncovering disturbing truths and facing frustrating barriers in their pursuit of the killer.",
-      date: "Available from 4 Feb to 2 March ",
+    date: "Available from 4 Feb to 2 March ",
     showTimes: [
-      { screen: "Screen1", time: "3:00 PM",Seats: 50 },
-      { screen: "Screen2", time: "6:00 PM",Seats: 60 },
-      { screen: "Screen3", time: "9:00 PM",Seats: 80 },
-      { screen: "Screen4", time: "10:00 PM",Seats: 30 },
-      { screen: "Screen5", time: "11:00 PM",Seats: 100 },
-      
+      { screen: "Screen1", time: "3:00 PM", Seats: 50 },
+      { screen: "Screen2", time: "6:00 PM", Seats: 60 },
+      { screen: "Screen3", time: "9:00 PM", Seats: 80 },
+      { screen: "Screen4", time: "10:00 PM", Seats: 30 },
+      { screen: "Screen5", time: "11:00 PM", Seats: 100 },
     ],
   },
 
@@ -346,7 +334,7 @@ export const movies = [
     title: "Pulp Fiction",
     rating: "R",
     image: "movie posters/posters/movie 14.jpg",
-    tagline:"Tarantino's Best Works",
+    tagline: "Tarantino's Best Works",
     swiperImage: "movie posters/swipers/swipe 4.jpg",
     trailer: "https://www.youtube.com/embed/s7EdQ4FqbhY?si=jT7SCA7WxjV5W3fO",
     genre: "Crime",
@@ -358,7 +346,7 @@ export const movies = [
     subtitles: "Arabic",
     description:
       "The lives of several characters intertwine in a series of stories involving crime, revenge, and redemption in Los Angeles, told in a nonlinear narrative.",
-      date: "Available from 11 Feb to 6 March",
+    date: "Available from 11 Feb to 6 March",
     showTimes: [
       { screen: "Screen1", time: "1:00 PM", Seats: 50 },
       { screen: "Screen2", time: "4:00 PM", Seats: 100 },
@@ -374,7 +362,7 @@ export const movies = [
     rating: "PG",
     image: "movie posters/posters/movie 15.jpg",
     tagline: "Top Hits",
-    swiperImage:"movie posters/swipers/swipe 2.jpg",
+    swiperImage: "movie posters/swipers/swipe 2.jpg",
     trailer: "https://www.youtube.com/embed/xU47nhruN-Q?si=onHlo7PtfC2rWQFZ",
     genre: "Anime",
     director: "Makoto Shinkai",
@@ -386,15 +374,15 @@ export const movies = [
     subtitles: "English",
     description:
       "Two teenagers, a boy and a girl, inexplicably begin to swap bodies, and as they navigate each other's lives, they develop a deep connection that spans time and space.",
-      date: "Available from 11 Feb to 10 March",
-      showTimes: [
-        { screen: "Screen1", time: "10:00 AM", Seats: 50 },
-        { screen: "Screen2", time: "12:00 PM", Seats: 40 },
-        { screen: "Screen3", time: "4:00 PM", Seats: 50 },
-        { screen: "Screen4", time: "7:00 PM", Seats: 80 },
-        { screen: "Screen5", time: "10:00 PM", Seats: 70 },
-        { screen: "Screen6", time: "11:00 PM", Seats: 80 },
-      ],
+    date: "Available from 11 Feb to 10 March",
+    showTimes: [
+      { screen: "Screen1", time: "10:00 AM", Seats: 50 },
+      { screen: "Screen2", time: "12:00 PM", Seats: 40 },
+      { screen: "Screen3", time: "4:00 PM", Seats: 50 },
+      { screen: "Screen4", time: "7:00 PM", Seats: 80 },
+      { screen: "Screen5", time: "10:00 PM", Seats: 70 },
+      { screen: "Screen6", time: "11:00 PM", Seats: 80 },
+    ],
   },
 ];
 
@@ -491,5 +479,3 @@ export const comingMovies = [
       "Sam Wilson, the new Captain America, finds himself in the middle of an international incident and must discover the motive behind a nefarious global plan.",
   },
 ];
-
-
