@@ -15,7 +15,6 @@
   padding-bottom: 10px;
 }
 
-
 .movie-poster {
   display: flex;
   margin: 40px;
@@ -283,4 +282,10 @@ html {
 
 .popup-content button:hover {
   background: linear-gradient(rgb(42, 192, 180), rgb(118, 230, 250));
+}
+
+@media screen and (max-width: 768px) {
+  .movie-poster {
+    flex-direction: column;
+  }
 }
