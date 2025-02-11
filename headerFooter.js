@@ -98,8 +98,8 @@ class SpecialFooter extends HTMLElement {
             <div class="footer-col">
             <h4>Exploring Our Site</h4>
             <ul>
-            <li><a href="/#movies">What's On</a></li>
-            <li><a href="/#coming">Coming Soon</a></li>
+            <li><a href="/neon-cinema#movies">What's On</a></li>
+            <li><a href="/neon-cinema#coming">Coming Soon</a></li>
             <li><a href="FoodDrinks.html">Food &amp; Drinks</a></li>
             </ul>
             </div>
