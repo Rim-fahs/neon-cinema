@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="logo/neon logo.png" type="image/icon" />
+    <title>Neon Cinema</title>
+
+    <link rel="stylesheet" href="stylesheetneon.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="content">
+      <special-header></special-header>
+      <!--Swiper-->
+      <section class="home swiper" id="home">
+        <div id="home-swiper" class="swiper-wrapper"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+
+      <!--Movies section-->
+      <section class="movies" id="movies">
+        <h2 class="heading">Showing This Week</h2>
+
+        <!--Movie container-->
+        <div id="movies-container" class="movies-container"></div>
+      </section>
+
+      <!--coming soon section-->
+      <section class="coming" id="coming">
+        <h2 class="heading">Coming Soon</h2>
+
+        <div id="coming-container" class="coming-container swiper">
+          <div class="swiper-wrapper"></div>
+        </div>
+      </section>
+
+      <special-footer></special-footer>
+    </div>
+
+    <script src="headerFooter.js"></script>
+
+    <script>
+      const list = document.getElementsByClassName("navbar");
+      list[0].children[0].children[0].classList.add("actvt-home");
+    </script>
+
+    <script type="module">
+      import { movies } from "./data.js";
+
+      window.addEventListener("load", function () {
+        const homeSwiperWrapper = document.getElementById("home-swiper");
+
+        // Filter the movies to only include the ones i want
+        const selectedMovies = movies.filter((movie) =>
+          [7, 15, 10, 14].includes(movie.id)
+        );
+        selectedMovies.forEach((movie) => {
+          const movieSlide = document.createElement("div");
+          movieSlide.classList.add("swiper-slide");
+
+          movieSlide.innerHTML = `
+        <img src="${movie.swiperImage}" loading="lazy" alt="${movie.title}" />
+        <div class="movie-title">
+          <span>${movie.tagline}</span>
+          <h1>${movie.title.toUpperCase()}</h1>
+          <a href="showtimes.html?id=${movie.id}" class="btn">Book Now</a>
+        </div>
+      `;
+
+          homeSwiperWrapper.appendChild(movieSlide);
+        });
+       });
+    </script>
+
+    <script type="module">
+      import { movies } from "./data.js";
+
+      const moviesContainer = document.getElementById("movies-container");
+
+      const moviesData = movies.map((movie) => {
+        const movieItem = document.createElement("div");
+        movieItem.innerHTML = `<a href="whatsOn.html?id=${movie.id}"> 
+          <div class="box">
+            <div class="box-image">
+              <img src="${movie.image}" loading="lazy" />
+            </div>
+
+            <h3>${movie.title}</h3>
+
+            <span>
+              ${movie.duration} | ${movie.genre}
+            </span>
+          </div></a>`;
+
+        moviesContainer.appendChild(movieItem);
+      });
+    </script>
+
+    <!-- JavaScript Inside the Same Page -->
+    <script type="module">
+      import { comingMovies } from "./data.js";
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const comingMoviesContainer = document.querySelector(
+          ".coming-container .swiper-wrapper"
+        );
+
+        // Add movie slides dynamically
+        comingMovies.forEach((coming) => {
+          const comingItem = document.createElement("div");
+          comingItem.classList.add("swiper-slide", "box");
+
+          comingItem.innerHTML = `
+              <a href="comingSoon.html?id=${coming.id}">
+                <div class="box-image">
+                  <img src="${coming.image}" loading= "lazy" alt="${coming.title}" />
+                </div>
+                <h3>${coming.title}</h3>
+                <span>${coming.subtitle}</span> 
+              </a>
+            `;
+
+          comingMoviesContainer.appendChild(comingItem);
+        });
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>

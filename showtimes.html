@@ -3,7 +3,7 @@
 
 <head>
   <link rel="icon" href="logo/neon logo.png" type="image/icon" />
-  <title>Neon Cinema</title>
+  <title>Showtimes</title>
 
   <link rel="stylesheet" href="stylesheetneon.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
@@ -22,63 +22,14 @@
       </div>
 
 
-      <div class="movie-poster">
-        <img src="movie posters\posters\movie 1.jpg" alt="Interstellar"
-          style="height: 700px;width: 450px;  border-radius: 7%;">
-        <div class="movie-name-date">
-          <div class="movie-name">
-            Interstaller Showtimes:
-          </div>
-          <h4>Available from 5 Feb to 20 Feb</h4>
-          <div class="movie-dates">
-            <table class="showtimes-table">
-              <thead>
-                <tr>
-                  <th>Screen</th>
-                  <th>Showtime</th>
-                  <th>Available Seats</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Screen 1</td>
-                  <td>12:00 PM</td>
-                  <td>50</td>
-                </tr>
+      <div id ="movie-poster" class="movie-poster">
+        
 
-                <tr>
-                  <td>Screen 2</td>
-                  <td>03:00 PM</td>
-                  <td>90</td>
-                </tr>
+    </div>
 
-
-                <tr>
-                  <td>Screen 3</td>
-                  <td>04:30 PM</td>
-                  <td>75</td>
-                </tr>
-
-                <tr>
-                  <td>Screen 4</td>
-                  <td>05:45 PM</td>
-                  <td>50</td>
-                </tr>
-
-                <tr>
-                  <td>Screen 5</td>
-                  <td>8:00 PM</td>
-                  <td>20</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <a href="#booknow-container" class="book-now-btn">Book Now</a>
-        </div>
-      </div>
     </div>
   </div>
-  </div>
+
 
 
   <div class="booknow">
@@ -101,12 +52,20 @@
         <div class="form-group">
           <label>Time</label>
           <select>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
             <option>12:00 PM </option>
+            <option>1:00 PM</option>
+            <option>2:00 PM</option>
             <option>3:00 PM </option>
-            <option>4:30 PM</option>
-            <option>2:15 PM</option>
-            <option>5:45 PM</option>
+            <option>4:00 PM</option>
+            <option>5:00 PM</option>
+            <option>6:00 PM</option>
+            <option>7:00 PM</option>
             <option>8:00 PM</option>
+            <option>9:00 PM</option>
+            <option>10:00 PM</option>
+            <option>11:00 PM</option>
           </select>
         </div>
 
@@ -126,8 +85,6 @@
       </form>
     </div>
   </div>
-  </div>
-  </div>
 
 
   <div id="thankYouPopup" class="popup">
@@ -139,6 +96,58 @@
       <button onclick="closePopup()">OK</button>
     </div>
   </div>
+
+
+<script type="module">
+  import { movies } from "./data.js";
+
+  const moviePosterDiv = document.getElementById("movie-poster");
+
+  const urlParams = new URLSearchParams(window.location.search);
+      const movieId = urlParams.get("id");
+
+      const movie = movies.find((item) => item.id == movieId);
+      
+      if (!movie) moviePosterDiv.innerHTML = "Movie not found";
+
+      moviePosterDiv.innerHTML = `     <img src="${movie.image}" loading="lazy" alt="${movie.title}"
+          style="height: 600px;width: 400px;  border-radius: 7%;">
+        <div class="movie-name-date">
+          <div class="movie-name">
+            ${movie.title} Showtimes:
+          </div>
+          <h4>${movie.date}</h4>
+          <div class="movie-dates">
+            <table class="showtimes-table">
+              <thead>
+                <tr>
+                  <th>Screen</th>
+                  <th>Showtime</th>
+                  <th>Available Seats</th>
+                </tr>
+              </thead>
+              <tbody>
+               ${movie.showTimes.map(showtime => `
+                <tr>
+                  <td>${showtime.screen}</td>
+                  <td>${showtime.time}</td>
+                  <td>${showtime.Seats}</td>
+                </tr>
+               `).join("")}
+              </tbody>
+            </table>
+          </div>
+          <a href="#booknow-container" class="book-now-btn">Book Now</a>
+        </div>
+
+`
+
+
+
+</script>
+
+
+
 
   <special-footer></special-footer>
 

@@ -1,10 +1,16 @@
 
-function openPopup(event) {
-    event.preventDefault(); 
-    document.getElementById("thankYouPopup").style.display = "flex";
 
-    // Reset the form inputs
-    document.getElementById("booknow-form").reset();
+function openPopup(event) {
+    event.preventDefault();
+
+    var form = document.getElementById("booknow-form");
+
+    if (form.checkValidity()) {
+        document.getElementById("thankYouPopup").style.display = "flex";
+        form.reset();
+    } else {
+        form.reportValidity();
+    }
 }
 
 function closePopup() {
