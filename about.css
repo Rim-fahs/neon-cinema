@@ -25,22 +25,22 @@
 }
 .content ul {
     list-style: circle; /* Keeps circle bullets */
-    color: white; /* Text color */
-    padding-left: 20px; /* Adds space to the left for bullets */
-    margin: 0; /* Removes any default margins on the <ul> */
+    color: white; 
+    padding-left: 20px; 
+    margin: 0;
 }
 
 .content li {
-    display: flex; /* Flexbox for layout */
-    align-items: center; /* Vertically centers content inside each li */
-    justify-content: flex-start; /* Aligns items to the left */
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
     padding-top: 10px;
     padding-bottom: 10px;
-    gap: 10px; /* Adds space between text and other possible elements inside li */
-    width: 100%; /* Makes sure li takes up full width, if needed */
+    gap: 10px;
+    width: 100%; 
 }
 
 .content li b {
-    max-width: 200px; /* Limits the width of bolded text */
-    white-space: normal; /* Allows text to wrap normally */
+    max-width: 200px;
+    white-space: normal; 
 }
