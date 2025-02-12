@@ -14,7 +14,7 @@ class SpecialHeader extends HTMLElement {
     <li ><a href="/neon-cinema#home">Home</a></li>
     <li><a href="/neon-cinema#movies">What's On</a></li>
     <li><a href="/neon-cinema#coming">Coming soon</a></li>
-    <li><a href="/neon-cinema#about">About</a></li>
+    <li><a href="#about">About</a></li>
     </ul>
     <a href="#" class="btn" id="signInBtn">Sign in</a>
     <div class="form-popup" id="loginForm">
